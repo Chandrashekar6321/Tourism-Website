@@ -1,0 +1,57 @@
+Sri Balaji Tourism 🛕
+
+📽️About the Project
+
+This is my first GitHub project, a tourism website I created while learning web development. The website showcases some popular pilgrimage places in India, including Tirupati, Varanasi, Arunachalam, and Yadadri.
+
+I built this project to practice HTML, CSS, and Bootstrap and to understand how different sections of a website work together.
+
+
+✨Features
+
+=> A home page with a welcome section.
+=> A list of favourite pilgrimage places.
+=> Information and images about different destinations.
+=> Image carousels to view destination pictures.
+=> An embedded video related to Yadadri.
+=> Navigation between different website sections.
+
+🛠️Technologies Used
+
+=> HTML
+=> CSS
+=> Bootstrap
+=> JavaScript
+
+📁 Folders
+
+1. Clone this repository:
+
+   git clone https://github.com/Chandrashekar6321/Tourism-Website.git
+   
+2. Open the project folder.
+3. Open `index.html` in your browser.
+
+🌱 What I Learned
+
+While creating this project, I practised writing HTML, styling web pages with CSS, using Bootstrap components, and adding images and interactive elements.
+
+As this is my first project, I learned a lot through practice and found areas where I can improve my web development skills.
+
+🚀 Future Improvements
+
+=> Make the website more responsive on mobile devices.
+=> Add more tourist destinations.
+=> Improve the design and user experience.
+=> Add more interactive features.
+
+🧑‍💻 About Me
+
+Hi, I'm Chandra Shekar Siddagoni. I have completed B.Com (CA) and am currently pursuing an MBA in Finance. I'm interested in software development and learning new technologies by building projects.
+
+This is the first step in my development journey, and I look forward to building more projects.
+
+=> GitHub: [@chandrashekar6321](https://github.com/Chandrashekar6321)
+=> LinkedIn: [https://www.linkedin.com/in/chandra-shekar-siddagoni-60b124319/]
+
+Thank you for visiting my project!
