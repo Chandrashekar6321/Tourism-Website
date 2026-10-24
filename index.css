@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+
 .bg-container {
     background-image: url("https://res.cloudinary.com/dogvzuurc/image/upload/f_auto/q_auto/balaji_medium_and_large_devices_sqqo5o.png");
     height: 100vh;
     background-size: cover;
+    background-position: center;
     margin: 0px;
     padding: 0px;
 }
@@ -11,14 +13,14 @@
 .tourism-card {
     text-align: center;
     background-color: white;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    padding: 5px;
+    border-radius: 25px;
+    padding: 20px;
     margin-bottom: 20px;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    margin-left: 100px;
-    margin-right: 100px;
+    /* DESKTOP KI 100px, MOBILE KI AUTO */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    width: 90%;
 }
 
 .button {
@@ -39,7 +41,6 @@
 .main-heading {
     font-family: "fantasy";
     font-weight: bold;
-
 }
 
 .paragraph {
@@ -48,36 +49,34 @@
 
 .favourite-places-bg-container {
     background-image: url("https://res.cloudinary.com/dogvzuurc/image/upload/f_auto/q_auto/favorite_place_background_img_de6s27.jpg");
-    height: cover;
+    min-height: 100vh;
     background-size: cover;
-    padding: 60px;
+    padding: 20px;
 }
 
 .favourite-places-heading {
     color: #f24d06;
     font-family: 'Playfair Display', serif;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     text-align: center;
     background-color: antiquewhite;
-    margin-left: 35%;
-    margin-right: 35%;
     border-radius: 10px;
-    padding-bottom: 2px;
+    padding: 8px 20px;
+    max-width: 350px;
+    margin: 0 auto 20px auto;
 }
 
 .favourite-place-card-container {
     background-color: rgb(234, 215, 215);
     border-radius: 8px;
     padding: 16px;
-    margin: 20px;
+    margin-bottom: 15px;
 }
 
 .favourite-place-card-heading {
-    font-size: 25px;
-
+    font-size: 22px;
     font-family: fantasy;
-    
     color: #111eb8;
 }
 
@@ -88,21 +87,18 @@
 }
 
 .favourite-place-card-image {
-    width: 130px;
+    width: 100px;
     height: 100px;
     border-radius: 10px;
-}
-
-.favourite-place-card-text-container {
-    margin-right: 15px;
+    object-fit: cover;
 }
 
 .detailed-view-bg-container {
-    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.freepik.com%2Ffree-vector%2Fdecorative-golden-mandala-red-background_1035-25355.jpg&f=1&nofb=1&ipt=0a6c17dadc7f4bfbde14e91bb92175c0780e727c12a30eeb1eee71fc875fedf5");
-    height: cover;
+    background-image: url("https://img.freepik.com/free-vector/decorative-golden-mandala-red-background_1035-25355.jpg");
+    min-height: 100vh;
     background-size: cover;
-    padding-right: 150px;
-    padding-left: 150px;
+    /* MOBILE KI PADDING TAKKUVA */
+    padding: 15px;
 }
 
 .detailed-view-heading {
@@ -110,14 +106,14 @@
     font-family: "fantasy";
     font-size: 28px;
     font-weight: bold;
-    padding: 24px;
+    padding: 15px;
 }
 
 .detailed-view-card-container {
     background-color: white;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    margin: 24px;
+    border-radius: 8px;
+    margin: 15px auto;
+    max-width: 900px;
 }
 
 .detailed-view-card-heading {
@@ -135,4 +131,42 @@
 
 .detailed-view-card-text-container {
     padding: 16px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .favourite-places-bg-container {
+        padding: 15px;
+    }
+
+    .favourite-place-card-container {
+        flex-direction: column !important;
+        margin: 10px 0px;
+    }
+
+    .favourite-place-card-image {
+        width: 100%;
+        height: 180px;
+        margin-top: 10px;
+    }
+
+    .detailed-view-bg-container {
+        padding: 10px;
+    }
+
+    .tourism-card {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .favourite-places-bg-container {
+        padding: 40px 60px;
+    }
+
+    .detailed-view-bg-container {
+        padding: 20px 100px;
+    }
 }
