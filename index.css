@@ -2,12 +2,24 @@
 
 
 .bg-container {
-    background-image: url("https://res.cloudinary.com/dogvzuurc/image/upload/f_auto/q_auto/balaji_medium_and_large_devices_sqqo5o.png");
+    background-image: url("https://res.cloudinary.com/dogvzuurc/image/upload/f_auto/q_auto/balaji_small_devices_ry1z1p.png");
     height: 100vh;
+    width: 100vw;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     margin: 0px;
     padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+@media screen and (min-width: 768px) {
+    .bg-container {
+        background-image: url("https://res.cloudinary.com/dogvzuurc/image/upload/f_auto/q_auto/balaji_medium_and_large_devices_sqqo5o.png");
+        background-position: center top;
+    }
 }
 
 .tourism-card {
@@ -15,14 +27,10 @@
     background-color: white;
     border-radius: 25px;
     padding: 20px;
-    margin-bottom: 20px;
-    /* DESKTOP KI 100px, MOBILE KI AUTO */
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 500px;
+    margin: 0 auto 20px auto;
     width: 90%;
+    max-width: 400px;
 }
-
 .button {
     color: white;
     background-color: #d63a2f;
