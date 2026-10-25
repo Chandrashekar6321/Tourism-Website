@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  overflow-x: hidden;
+}
+
+/* --- HOME BG - DESKTOP OLD IMAGE DEFAULT --- */
 .bg-container {
   height: 100vh;
   width: 100vw;
+  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tourism-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -14,17 +25,14 @@
   text-align: center;
 }
 
-
-.bg-container {
-  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tourism-bg.png");
-}
-
-
+/* --- MOBILE VIEW - NEE SRI BALAJI IMAGE --- */
 @media screen and (max-width: 767px) {
   .bg-container {
     background-image: url("https://res.cloudinary.com/dogvzuurc/image/upload/f_auto/q_auto/ChatGPT_Image_Oct_25_2026_09_22_18_AM_c7pqgk.jpg");
   }
 }
+
+/* --- MIGATHA CODE SAME --- */
 .tourism-card {
     text-align: center;
     background-color: white;
@@ -43,21 +51,17 @@
     border-radius: 20px;
     font-family: "fantasy";
 }
-
 .balaji-logo {
     height: 60px;
     width: 60px;
 }
-
 .main-heading {
     font-family: "fantasy";
     font-weight: bold;
 }
-
 .paragraph {
     font-family: "Bree Serif";
 }
-
 .favourite-places-bg-container {
     background-image: url("https://res.cloudinary.com/dogvzuurc/image/upload/f_auto/q_auto/favorite_place_background_img_de6s27.jpg");
     min-height: 100vh;
@@ -65,7 +69,6 @@
     width: 100%;
     padding: 24px;
 }
-
 .favourite-places-heading {
     color: #f24d06;
     font-family: 'Playfair Display', serif;
@@ -78,33 +81,28 @@
     max-width: 350px;
     margin: 0 auto 20px auto;
 }
-
 .favourite-place-card-container {
     background-color: rgb(234, 215, 215);
     border-radius: 8px;
     padding: 16px;
     margin-bottom: 15px;
 }
-
 .favourite-place-card-heading {
     font-size: 22px;
     font-family: fantasy;
     color: #111eb8;
 }
-
 .favourite-place-card-description {
     color: #170a4e;
     font-family: "fantasy";
     font-size: 13px;
 }
-
 .favourite-place-card-image {
     width: 100px;
     height: 100px;
     border-radius: 10px;
     object-fit: cover;
 }
-
 .detailed-view-bg-container {
     background-image: url("https://img.freepik.com/free-vector/decorative-golden-mandala-red-background_1035-25355.jpg");
     min-height: 100vh;
@@ -112,7 +110,6 @@
     background-size: cover;
     padding: 16px;
 }
-
 .detailed-view-heading {
     color: white;
     font-family: "fantasy";
@@ -120,91 +117,41 @@
     font-weight: bold;
     padding: 15px;
 }
-
 .detailed-view-card-container {
     background-color: white;
     border-radius: 8px;
     margin: 15px auto;
     max-width: 900px;
 }
-
 .detailed-view-card-heading {
     color: #0f0e46;
     font-family: "fantasy";
     font-size: 23px;
     font-weight: bold;
 }
-
 .detailed-view-card-description {
     color: #6c6b70;
     font-family: "Roboto";
     font-size: 13px;
 }
-
 .detailed-view-card-text-container {
     padding: 16px;
 }
 
-
 @media screen and (max-width: 768px) {
-    .favourite-places-bg-container {
-        padding: 15px;
-    }
-
     .favourite-place-card-container {
         flex-direction: column !important;
-        margin: 10px 0px;
     }
-
     .favourite-place-card-image {
         width: 100%;
         height: 180px;
         margin-top: 10px;
     }
-
-    .detailed-view-bg-container {
-        padding: 10px;
-    }
-
-    .tourism-card {
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
-
 @media screen and (min-width: 768px) {
     .favourite-places-bg-container {
         padding: 40px 60px;
     }
-
-/* FIX FOR WHITE GAP - MOBILE VIEW */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.detailed-view-bg-container {
-  width: 100% !important;
-  min-height: 100vh;
-  background-size: cover !important;
-}
-
-.favourite-places-bg-container {
-  width: 100% !important;
-  background-size: cover !important;
-}
-
-.favourite-place-card-container {
-  width: 100% !important;
-  margin: 10px 0px;
-}
-
     .detailed-view-bg-container {
         padding: 20px 100px;
     }
