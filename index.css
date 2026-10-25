@@ -4,7 +4,7 @@
 .bg-container {
     background-image: url("https://res.cloudinary.com/dogvzuurc/image/upload/f_auto/q_auto/balaji_small_devices_ry1z1p.png");
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,8 @@
     background-image: url("https://res.cloudinary.com/dogvzuurc/image/upload/f_auto/q_auto/favorite_place_background_img_de6s27.jpg");
     min-height: 100vh;
     background-size: cover;
-    padding: 20px;
+    width: 100%;
+    padding: 24px;
 }
 
 .favourite-places-heading {
@@ -100,9 +101,9 @@
 .detailed-view-bg-container {
     background-image: url("https://img.freepik.com/free-vector/decorative-golden-mandala-red-background_1035-25355.jpg");
     min-height: 100vh;
+    width:100%;
     background-size: cover;
-    /* MOBILE KI PADDING TAKKUVA */
-    padding: 15px;
+    padding: 16px;
 }
 
 .detailed-view-heading {
