@@ -1,22 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body { margin:0 !important; padding:0 !important; width:100%; overflow-x:hidden; }
 
-body {
-  overflow-x: hidden;
-}
+.container-fluid, .row, .col-12 { margin:0 !important; padding:0 !important; }
 
-/* --- HOME BG - DESKTOP OLD IMAGE DEFAULT --- */
+/* HOME - SAME IMAGE FOR MOBILE & DESKTOP - NO WHITE */
 .bg-container {
   height: 100vh;
-  width: 100vw;
-  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tourism-bg.png");
+  width: 100%;
+  background-image: url("https://res.cloudinary.com/dogvzuurc/image/upload/f_auto/q_auto/ChatGPT_Image_Oct_25_2026_09_22_18_AM_c7pqgk.jpg");
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -25,14 +19,17 @@ body {
   text-align: center;
 }
 
-/* --- MOBILE VIEW - NEE SRI BALAJI IMAGE --- */
 @media screen and (max-width: 767px) {
   .bg-container {
-    background-image: url("https://res.cloudinary.com/dogvzuurc/image/upload/f_auto/q_auto/ChatGPT_Image_Oct_25_2026_09_22_18_AM_c7pqgk.jpg");
+    background-position: center top;
   }
 }
 
-/* --- MIGATHA CODE SAME --- */
+@media screen and (min-width: 768px) {
+  .bg-container {
+    background-position: center center; /* Desktop lo middle nundi cut avuthundi, baga kanipisthundi */
+  }
+}/* --- MIGATHA CODE SAME --- */
 .tourism-card {
     text-align: center;
     background-color: white;
